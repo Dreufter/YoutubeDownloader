@@ -15,7 +15,7 @@ from PyQt5.QtGui import QFont
 
 
 # ==================== CONFIGURATION ====================
-DOWNLOAD_FOLDER = str(Path(__file__).parent.joinpath("Downloads"))
+DOWNLOAD_FOLDER = str(Path.home() / "YouTubeDownloader-Downloads")
 Path(DOWNLOAD_FOLDER).mkdir(parents=True, exist_ok=True)
 
 QUALITY_MAP = {
@@ -267,7 +267,7 @@ class YouTubeDownloaderApp(QMainWindow):
         
         # Title
         title = QLabel("YouTube Downloader Pro")
-        title_font = QFont("Arial", 18, QFont.Bold)
+        title_font = QFont("Sans Serif", 18, QFont.Bold)
         title.setFont(title_font)
         title.setAlignment(Qt.AlignCenter)
         main_layout.addWidget(title)
