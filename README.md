@@ -23,5 +23,5 @@ This project allows you to download videos or extract audio from YouTube links, 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/YouTubeDownloader.git
+git clone https://github.com/Dreufter/YouTubeDownloader.git
 cd YouTubeDownloader
